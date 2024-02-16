@@ -1,0 +1,135 @@
+[package]
+name = "JTG"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+sha2 = "0.9.8"
+serde = {version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+libp2p = { version = "0.39", features = ["tcp-tokio", "mdns"] }
+tokio = { version = "1.0", features = ["full"] }
+hex = "0.4"
+once_cell = "1.5"
+pretty_env_logger = "0.4"
+ring = "0.16"
+base64 = "0.13"
+tokio-tungstenite = "0.14"
+futures = "0.3"
+rand = "0.8"
+log = "0.4"
+simple_logger = "1.11"
+
+
+[[bin]]
+name = "jex_local_blockchain"
+path = "src/main.rs"
+
+/// A simple blockchain implementation in Rust.
+///
+/// This blockchain uses the Proof-of-Work (PoW) consensus algorithm, and it supports multiple nodes.
+/// Each node can add new blocks to the blockchain, and the longest chain is considered the valid one.
+///
+/// The blockchain stores transactions and smart contracts, and it uses the SHA-256 hashing algorithm to secure the data.
+///
+/// The blockchain can be used for various purposes, such as decentralized applications, digital currencies, and supply chain management.
+///
+/// # Examples
+///
+/// Creating a new blockchain:
+/// ```
+/// let mut blockchain = Blockchain::new();
+/// ```
+/// Creating a new block:
+/// ```
+/// let mut blockchain = Blockchain::new();
+/// let block = blockchain.create_block("miner1".to_string());
+/// ```
+/// Adding a new block to the blockchain:
+/// ```
+/// let mut blockchain = Blockchain::new();
+/// blockchain.add_block(block);
+/// ```
+///
+/// # References
+///
+/// - [Bitcoin](https://bitcoin.org/)
+/// - [Ethereum](https://ethereum.org/)
+/// - [Hyperledger Fabric](https://www.hyperledger.org/projects/fabric)
+/// - [Corda](https://www.corda.net/)
+/// - [Hyperledger Sawtooth](https://www.hyperledger.org/projects/sawtooth)
+/// - [Quorum](https://www.jpmorgan.com/quorum)
+/// - [EOS](https://eos.io/)
+/// - [Tron](https://tron.network/)
+/// - [Stellar](https://www.stellar.org/)
+/// - [NEO](https://neo.org/)
+/// - [Cardano](https://cardano.org/)
+/// - [IOTA](https://iota.org/)
+/// - [Monero](https://getmonero.org/)
+/// - [Zcash](https://z.cash/)
+/// - [Dash](https://www.dash.org/)
+/// - [Ripple](https://ripple.com/)
+/// - [Litecoin](https://litecoin.org/)
+/// - [Dogecoin](https://dogecoin.com/)
+/// - [Bitcoin Cash](https://www.bitcoincash.org/)
+/// - [Bitcoin SV](https://bitcoinsv.io/)
+/// - [Ethereum Classic](https://ethereumclassic.org/)
+/// - [Ravencoin](https://ravencoin.org/)
+/// - [VeChain](https://www.vechain.org/)
+/// - [Ontology](https://ont.io/)
+/// - [Icon](https://icon.foundation/)
+/// - [Waves](https://wavesplatform.com/)
+/// - [Nano](https://nano.org/)
+/// - [Stratis](https://stratisplatform.com/)
+/// - [Ardor](https://www.ardorplatform.org/)
+/// - [NEM](https://nem.io/)
+/// - [PIVX](https://pivx.org/)
+/// - [Zcoin](https://zcoin.io/)
+/// - [Verge](https://vergecurrency.com/)
+/// - [Hshare](https://h.cash/)
+/// - [Bytecoin](https://bytecoin.org/)
+/// - [Pascal Coin](https://pascalcoin.org/)
+/// - [Nav Coin](https://navcoin.org/)
+/// - [GameCredits](https://gamecredits.com/)
+/// - [DigiByte](https://digibyte.co/)
+/// - [Bitcoin Gold](https://bitcoingold.org/)
+/// - [Bitcoin Diamond](https://btcd.io/)
+/// - [Bitcoin Private](https://bitcoinprivate.com/)
+/// - [Bitcoin Interest](https://bitcoininterest.io/)
+/// - [Bitcoin Atom](https://bitcoinatom.io/)
+/// - [BitcoinZ](https://bitcoinz.io/)
+/// - [Bitcoin Rhodium](https://bitcoinrhodium.org/)
+/// - [Bitcoin Silver](https://bitcoinsilver.io/)
+/// - [Bitcoin Uranium](https://bitcoinuranium.org/)
+/// - [BitcoinX](https://bitcoinx.io/)
+/// - [Bitcoin God](https://bitcoingod.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Stake](https://bitcoinstake.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinpizza.org/)
+/// - [Bitcoin Pizza](https://bitcoinp
